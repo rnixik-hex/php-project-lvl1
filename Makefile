@@ -10,8 +10,17 @@ docker-build:
 
 docker-prepare:
 	make docker-build
-	docker run --rm -it -v `pwd`:`pwd` -w `pwd` local-php-project-lvl1 composer install
+	docker run --rm -it -v `pwd`:`pwd` -w `pwd` local-php-project-lvl1 make install
 
 docker-run:
 	make docker-build
 	docker run --rm -it -v `pwd`:`pwd` -w `pwd` local-php-project-lvl1 bash
+
+install:
+	composer install
+
+validate:
+	composer validate
+
+brain-games:
+	./bin/brain-games
