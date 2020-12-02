@@ -22,5 +22,8 @@ install:
 validate:
 	composer validate
 
+lint:
+	composer phpcs
+
 brain-games:
 	./bin/brain-games
