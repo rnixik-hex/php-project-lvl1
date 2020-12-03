@@ -7,6 +7,7 @@ Educational project with mini games:
 * game-even
 * game-calc
 * brain-gcd
+* brain-progression
 
 ## How to run
 
@@ -22,6 +23,9 @@ Run `make [game-name]`
 
 ### brain-gcd
 [![asciicast](https://asciinema.org/a/376951.svg)](https://asciinema.org/a/376951)
+
+### brain-progression
+[![asciicast](https://asciinema.org/a/376955.svg)](https://asciinema.org/a/376955)
 
 ## Commands to work in Docker
 

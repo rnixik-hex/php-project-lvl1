@@ -37,6 +37,9 @@ brain-calc:
 brain-gcd:
 	./bin/brain-gcd
 
+brain-progression:
+	./bin/brain-progression
+
 docker-asciinema-auth:
 	mkdir -p "${HOME}/.config/asciinema"
 	docker run --rm -it -v `pwd`:`pwd` -w `pwd` -v "${HOME}/.config/asciinema:${HOME}/.config/asciinema" local-php-project-lvl1 asciinema auth
