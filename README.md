@@ -8,6 +8,7 @@ Educational project with mini games:
 * game-calc
 * brain-gcd
 * brain-progression
+* brain-prime
 
 ## How to run
 
@@ -26,6 +27,9 @@ Run `make [game-name]`
 
 ### brain-progression
 [![asciicast](https://asciinema.org/a/376955.svg)](https://asciinema.org/a/376955)
+
+### brain-prime
+[![asciicast](https://asciinema.org/a/376957.svg)](https://asciinema.org/a/376957)
 
 ## Commands to work in Docker
 
