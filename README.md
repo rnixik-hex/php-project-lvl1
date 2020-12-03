@@ -4,15 +4,16 @@
 [![Linter](https://github.com/rnixik-hex/php-project-lvl1/workflows/Linter/badge.svg)](https://github.com/rnixik-hex/php-project-lvl1/actions)
 
 Educational project with mini games:
-* game-even
-* game-calc
-* brain-gcd
-* brain-progression
-* brain-prime
+* `game-even` - decide whether random number is even or not
+* `game-calc` - provide correct answer for mathematical operation on two numbers
+* `brain-gcd` - find the greatest common divisor for two numbers
+* `brain-progression` - find missing number in progression
+* `brain-prime` - decide whether random number is prime or not
 
 ## How to run
 
 Run `make [game-name]`
+See previews with asciicast for details.
 
 ## Previews
 
