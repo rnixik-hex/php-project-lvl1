@@ -31,6 +31,9 @@ brain-games:
 brain-even:
 	./bin/brain-even
 
+brain-calc:
+	./bin/brain-calc
+
 docker-asciinema-auth:
 	mkdir -p "${HOME}/.config/asciinema"
 	docker run --rm -it -v `pwd`:`pwd` -w `pwd` -v "${HOME}/.config/asciinema:${HOME}/.config/asciinema" local-php-project-lvl1 asciinema auth

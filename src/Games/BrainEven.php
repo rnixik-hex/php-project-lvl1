@@ -17,11 +17,11 @@ function play(): void
 
 function getRiddle(): array
 {
-    $number = getRandomNumber();
+    $number = (string) getRandomNumber();
     $isEven = isEven($number);
     $correctAnswer = $isEven ? POSITIVE_ANSWER : NEGATIVE_ANSWER;
 
-    return [$number, $correctAnswer];
+    return [(string) $number, $correctAnswer];
 }
 
 function isEven(int $number): bool

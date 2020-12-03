@@ -14,7 +14,7 @@ function playGame(string $gameRulesDescription, callable $getRiddle)
     line($gameRulesDescription);
     for ($round = 0; $round < GAME_ROUNDS_NUM; $round += 1) {
         [$question, $correctAnswer] = $getRiddle();
-        line('Question: %d', $question);
+        line('Question: %s', $question);
         $answer = prompt('Your answer');
         if ($answer !== $correctAnswer) {
             line("'$answer' is wrong answer ;(. Correct answer was '$correctAnswer'.");

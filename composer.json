@@ -12,7 +12,9 @@
         "phpcs": "phpcs -- --standard=PSR12 bin src"
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "autoload": {
         "files": [
