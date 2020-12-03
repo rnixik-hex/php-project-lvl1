@@ -26,7 +26,7 @@ function getRiddle(): array
     $progression = buildProgression($startNumber, $stepSize, $length);
     $missingIndex = array_rand($progression);
     $progressionWithMissingNumber = $progression;
-    $progressionWithMissingNumber[$missingIndex] = '...';
+    $progressionWithMissingNumber[$missingIndex] = '..';
 
     $question = implode(' ', $progressionWithMissingNumber);
 
