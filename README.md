@@ -1,6 +1,6 @@
 # Brain games
 [![Actions Status](https://github.com/rnixik-hex/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/rnixik-hex/php-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/caf4f4f52d2a2bdecd74/maintainability)](https://codeclimate.com/github/rnixik-hex/php-project-lvl1/maintainability)
 [![Linter](https://github.com/rnixik-hex/php-project-lvl1/workflows/Linter/badge.svg)](https://github.com/rnixik-hex/php-project-lvl1/actions)
 
 Educational project with mini games:
