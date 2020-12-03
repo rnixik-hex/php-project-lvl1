@@ -6,7 +6,8 @@
     "minimum-stability": "stable",
     "require": {
         "wp-cli/php-cli-tools": "v0.11.11",
-        "squizlabs/php_codesniffer": "^3.5"
+        "squizlabs/php_codesniffer": "^3.5",
+        "ext-gmp": "*"
     },
     "scripts": {
         "phpcs": "phpcs -- --standard=PSR12 bin src"
@@ -14,7 +15,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "autoload": {
         "files": [
