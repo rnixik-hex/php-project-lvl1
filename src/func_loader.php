@@ -1,8 +1,15 @@
 <?php
 
-foreach (glob(__DIR__ . '/*.php') as $fileName) {
-    if ($fileName === __FILE__) {
-        continue;
+$directoriesToScan = [
+    '.',
+    'Games',
+];
+
+foreach ($directoriesToScan as $directory) {
+    foreach (glob(__DIR__ . '/' . $directory . '/*.php') as $fileName) {
+        if ($fileName === __FILE__) {
+            continue;
+        }
+        include_once $fileName;
     }
-    include_once $fileName;
 }
