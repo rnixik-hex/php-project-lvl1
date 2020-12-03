@@ -24,6 +24,7 @@ validate:
 
 lint:
 	composer phpcs
+	composer phpstan
 
 brain-games:
 	./bin/brain-games

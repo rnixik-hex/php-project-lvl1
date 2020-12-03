@@ -17,7 +17,7 @@ function play(): void
 
 function getRiddle(): array
 {
-    $number = (string) getRandomNumber();
+    $number = getRandomNumber();
     $isPrime = isPrime($number);
     $correctAnswer = $isPrime ? POSITIVE_ANSWER : NEGATIVE_ANSWER;
 

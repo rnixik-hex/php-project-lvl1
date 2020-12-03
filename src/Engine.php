@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const GAME_ROUNDS_NUM = 3;
 
-function playGame(string $gameRulesDescription, callable $getRiddle)
+function playGame(string $gameRulesDescription, callable $getRiddle): void
 {
     $playerName = greet();
 

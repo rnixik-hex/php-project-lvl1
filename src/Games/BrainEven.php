@@ -17,7 +17,7 @@ function play(): void
 
 function getRiddle(): array
 {
-    $number = (string) getRandomNumber();
+    $number = getRandomNumber();
     $isEven = isEven($number);
     $correctAnswer = $isEven ? POSITIVE_ANSWER : NEGATIVE_ANSWER;
 

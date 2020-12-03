@@ -6,7 +6,7 @@ $directoriesToScan = [
 ];
 
 foreach ($directoriesToScan as $directory) {
-    foreach (glob(__DIR__ . '/' . $directory . '/*.php') as $fileName) {
+    foreach ((array) glob(__DIR__ . '/' . $directory . '/*.php') as $fileName) {
         if ($fileName === __FILE__) {
             continue;
         }
