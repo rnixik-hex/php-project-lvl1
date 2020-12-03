@@ -26,7 +26,18 @@ function getRiddle(): array
 
 function isPrime(int $number): bool
 {
-    return gmp_prob_prime($number) === 2;
+    if ($number === 1) {
+        return false;
+    }
+
+    // Find any divisor. If it is found, number is not prime by definition
+    for ($i = 2; $i <= $number / 2; $i += 1) {
+        if ($number % $i === 0) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 function getRandomNumber(): int

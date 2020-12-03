@@ -4,7 +4,7 @@ namespace Brain\Games\Games\BrainGcd;
 
 use function Brain\Games\Engine\playGame;
 
-const MIN_RANDOM_NUMBER = 1;
+const MIN_RANDOM_NUMBER = 2;
 const MAX_RANDOM_NUMBER = 100;
 
 function play(): void
@@ -26,7 +26,15 @@ function getRiddle(): array
 
 function getGreatestCommonDivisor(int $number1, int $number2): int
 {
-    return (int) gmp_gcd($number1, $number2);
+    $minimalNumber = min($number1, $number2);
+
+    for ($potentialDivisor = $minimalNumber; $potentialDivisor > 0; $potentialDivisor -= 1) {
+        if ($number1 % $potentialDivisor === 0 && $number2 % $potentialDivisor === 0) {
+            return $potentialDivisor;
+        }
+    }
+
+    return 1;
 }
 
 function getRandomNumber(): int
