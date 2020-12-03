@@ -30,3 +30,10 @@ brain-games:
 
 brain-even:
 	./bin/brain-even
+
+docker-asciinema-auth:
+	mkdir -p "${HOME}/.config/asciinema"
+	docker run --rm -it -v `pwd`:`pwd` -w `pwd` -v "${HOME}/.config/asciinema:${HOME}/.config/asciinema" local-php-project-lvl1 asciinema auth
+
+docker-asciinema-rec:
+	docker run --rm -it -v `pwd`:`pwd` -w `pwd` -v "${HOME}/.config/asciinema:${HOME}/.config/asciinema" local-php-project-lvl1 asciinema rec
