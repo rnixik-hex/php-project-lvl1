@@ -11,7 +11,8 @@ const MAX_RANDOM_NUMBER = 100;
 
 function play(): void
 {
-    $description = 'Answer "' . POSITIVE_ANSWER . '" if the number is even, otherwise answer "no".';
+    $description = 'Answer "' . POSITIVE_ANSWER . '" if the number is even,'
+        . ' otherwise answer "' . NEGATIVE_ANSWER . '".';
     playGame($description, fn() => getRiddle());
 }
 
