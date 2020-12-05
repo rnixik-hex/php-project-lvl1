@@ -27,7 +27,7 @@ function getRiddle(): array
 
 function isPrime(int $number): bool
 {
-    if ($number === 1) {
+    if ($number <= 1) {
         return false;
     }
 
