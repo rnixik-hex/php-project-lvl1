@@ -9,7 +9,11 @@ const GAME_ROUNDS_NUM = 3;
 
 function playGame(string $gameRulesDescription, callable $getRiddle): void
 {
-    $playerName = greet();
+    line('Welcome to the Brain Game!');
+    $defaultValue = '';
+    $questionMarker = ' ';
+    $playerName = prompt('May I have your name?', $defaultValue, $questionMarker);
+    line("Hello, %s!", $playerName);
 
     line($gameRulesDescription);
     for ($round = 0; $round < GAME_ROUNDS_NUM; $round += 1) {
@@ -26,15 +30,4 @@ function playGame(string $gameRulesDescription, callable $getRiddle): void
     }
 
     line("Congratulations, %s!", $playerName);
-}
-
-function greet(): string
-{
-    line('Welcome to the Brain Game!');
-    $defaultValue = '';
-    $questionMarker = ' ';
-    $name = prompt('May I have your name?', $defaultValue, $questionMarker);
-    line("Hello, %s!", $name);
-
-    return $name;
 }
