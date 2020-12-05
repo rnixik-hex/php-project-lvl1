@@ -25,7 +25,6 @@ function getRiddle(): array
 
     $question = "$number1 $operation $number2";
 
-    $correctAnswer = '';
     switch ($operation) {
         case OPERATION_SUM:
             $correctAnswer = (string) ($number1 + $number2);
@@ -35,6 +34,9 @@ function getRiddle(): array
             break;
         case OPERATION_MULTIPLICATION:
             $correctAnswer = (string) ($number1 * $number2);
+            break;
+        default:
+            throw new \Exception("Unexpected operation: '$operation'");
     }
 
     return [$question, $correctAnswer];
